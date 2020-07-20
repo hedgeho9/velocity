@@ -128,15 +128,22 @@ table {
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .header_container {
+  display: flex;
+  justify-content: space-between;
   max-width: 50%;
   margin: auto;
-  height: 55px;
 }
 
 .header_title {
-  float: left;
-  margin-top: 10px;
+  display: flex;
+  height: 3.5em;
+  align-items: center;
 }
 
 .header_title a {
@@ -148,15 +155,18 @@ table {
 }
 
 .nav_menu {
-  float: right;
-  margin-top: 15px;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  width: 12em;
+  justify-content: space-around;
 }
 
 .nav_menu a {
   text-decoration: none;
-  padding-left: 20px;
-  padding-right: 10px;
   font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav_menu a:nth-child(1) {
@@ -165,4 +175,102 @@ table {
 
 .nav_menu a:nth-child(2) {
   color: rgb(82, 82, 82);
+}
+
+.nav_menu a:nth-child(2):hover {
+  color: #318ffa;
+}
+
+.main_section_container {
+  width: 100%;
+  height: 62vh;
+  overflow: hidden;
+  background-image: url("/imgs/section1_main.jpg");
+  background-size: cover;
+  display: flex;
+
+  letter-spacing: 3px;
+  font-weight: lighter;
+
+  border-bottom: 0.29em solid #69b9ff;
+}
+
+.main_section_container::after {
+  content: "";
+  position: absolute;
+  top: 5.69vh;
+  left: 0;
+  width: 100%;
+  height: 62vh;
+  background: linear-gradient(
+    rgba(49, 143, 250, 0.479),
+    rgba(49, 143, 250, 0.158)
+  );
+}
+
+.main_section_item {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  z-index: 1;
+}
+
+.main_section_item h1 {
+  color: white;
+  font-size: 3.7em;
+  padding-bottom: 3vh;
+}
+
+.main_section_item p {
+  color: #3592e5;
+  font-size: 1.5em;
+  padding-bottom: 3vh;
+}
+
+.ma_block {
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.ms_block button {
+  font-size: 1em;
+  padding-top: 0.7em;
+  padding-right: 1.8em;
+  padding-bottom: 0.7em;
+  padding-left: 1.8em;
+  border-radius: 4%;
+  border: none;
+  letter-spacing: 2px;
+}
+
+.ms_block button:hover {
+  cursor: pointer;
+}
+
+.ms_block button:nth-child(1) {
+  color: white;
+  background-color: #62b6ff;
+  border: 1.5px solid #62b6ff;
+  transition: all 0.5s;
+}
+
+.ms_block button:nth-child(2) {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 1.5px white;
+  transition: all 0.5s;
+}
+
+.ms_block button:nth-child(1):hover {
+  color: white;
+  background-color: #1792fd;
+  border: 1.5px solid #1792fd;
+}
+
+.ms_block button:nth-child(2):hover {
+  color: #1792fd;
+  border: solid 1.5px #1792fd;
 }
