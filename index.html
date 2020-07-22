@@ -24,11 +24,10 @@
         </div>
       </header>
 
-      <section style="background-color: rgb(89, 248, 248);">
+      <section>
         <div class="main_section_container">
           <div class="main_section_item">
             <h1>THIS IS VELOCITY</h1>
-            <!-- <p>A FREE REPSONSIVE TEMPLATE BY WEBFLOW</p> -->
             <p>A CHICKEN MEOKGO SIPDA GANJANG CHICKEN</p>
             <div class="ms_block">
               <button>SIGN UP</button>
@@ -38,7 +37,7 @@
         </div>
       </section>
 
-      <section style="background-color: rgb(202, 67, 67);">
+      <section class="sc2">
         <div class="second_section_container">
           <div class="second_section_title">
             <h2>WHAT WE DO</h2>
@@ -46,63 +45,87 @@
           </div>
           <div class="second_section_item">
             <div class="white_box">
-              <img src="/" />
-              <h3>GRAPHIC DESIHN</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique
-              </p>
+              <div class="sc2_box">
+                <img src="/imgs/whiteBox_pvc1.png" />
+              </div>
+              <div class="sc2_pbox">
+                <h3>GRAPHIC DESIHN</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique
+                </p>
+              </div>
             </div>
             <div class="white_box">
-              <img src="/" />
-              <h3>AWESOME CODE</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique
-              </p>
+              <div class="sc2_box">
+                <img src="/imgs/whiteBox_pvc2.PNG" />
+              </div>
+              <div class="sc2_pbox">
+                <h3>AWESOME CODE</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique
+                </p>
+              </div>
             </div>
             <div class="white_box">
-              <img src="/" />
-              <h3>FREE TEMPLATE</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique
-              </p>
+              <div class="sc2_box">
+                <img src="/imgs/whiteBox_pvc3.PNG" />
+              </div>
+              <div class="sc2_pbox">
+                <h3>FREE TEMPLATE</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section style="background-color: burlywood;">
+      <section>
         <div class="third_section_container">
           <div class="third_section_title">
             <h2>SERVICES</h2>
             <p>THIS IS SOME TEXT INSIDE OF A DIV BLOCK</p>
           </div>
           <div class="third_section_item">
-            <div class="white_box">
-              <img src="/" />
-              <h3>SERVICES ONE</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique
-              </p>
-              <button>LEARN MORE</button>
+            <div class="sc3_white_box">
+              <div class="sc3_box">
+                <img src="/imgs/section3_1.jpg" />
+              </div>
+              <div class="sc3_pbox">
+                <h3>SERVICES ONE</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  varius.
+                </p>
+                <button>LEARN MORE</button>
+              </div>
             </div>
-            <div class="white_box">
-              <img src="/" />
-              <h3>SERVICES TWO</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique
-              </p>
-              <button>LEARN MORE</button>
+            <div class="sc3_white_box">
+              <div class="sc3_box">
+                <img src="/imgs/section3_2.jpg" />
+              </div>
+              <div class="sc3_pbox">
+                <h3>SERVICES TWO</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  varius.
+                </p>
+                <button>LEARN MORE</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section style="background-color: dodgerblue;">
+      <section>
         <div class="fourth_section_container">
           <div class="fourth_section_title">
             <h2>TAB SECTION</h2>
@@ -110,14 +133,22 @@
           </div>
           <div class="wrapper">
             <div class="wrapper_menu">
-              <button>TAP BUTTON 1</button>
-              <button>TAP BUTTON 2</button>
-              <button>TAP BUTTON 3</button>
+              <button class="tapBtn" onclick="currentTap(1)">
+                TAP BUTTON 1
+              </button>
+              <button class="tapBtn" onclick="currentTap(2)">
+                TAP BUTTON 2
+              </button>
+              <button class="tapBtn" onclick="currentTap(3)">
+                TAP BUTTON 3
+              </button>
             </div>
             <div class="wrapper_content">
-              <div class="tap1">
+              <div class="tapBox">
                 <div class="div_block">
-                  <img src="/" />
+                  <div class="sc4_imgBox">
+                    <img class="fade" src="/imgs/section4_1.jpeg" />
+                  </div>
                   <h2>Some Title Here</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -129,9 +160,11 @@
                   </p>
                 </div>
               </div>
-              <div class="tap2">
+              <div class="tapBox">
                 <div class="div_block">
-                  <img src="/" />
+                  <div class="sc4_imgBox">
+                    <img class="fade" src="/imgs/section4_2.jpeg" />
+                  </div>
                   <h2>Heading</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -143,9 +176,11 @@
                   </p>
                 </div>
               </div>
-              <div class="tap3">
+              <div class="tapBox">
                 <div class="div_block">
-                  <img src="/" />
+                  <div class="sc4_imgBox">
+                    <img class="fade" src="/imgs/section4_3.jpeg" />
+                  </div>
                   <h2>Heading</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -162,10 +197,10 @@
         </div>
       </section>
 
-      <footer style="background-color: orange;">
+      <footer>
         <div class="footer_container">
           <div class="footer_column">
-            <div class="footer_box1">
+            <div class="footer_box">
               <h5>ABOUT VELOCITY</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -174,22 +209,27 @@
                 commodo diam libero vitae erat.
               </p>
             </div>
-            <div class="footer_box2">
+            <div class="footer_box">
               <h5>USEFUL LINKS</h5>
-              <a href="/">Phasellus gravida semper nisi</a>
-              <a href="/">Suspendisse nisl elit</a>
-              <a href="/">Dellentesque habitant morbi</a>
-              <a href="/">Yamabuki Saaya jonna cute</a>
+              <div class="link_div">
+                <a href="/">Phasellus gravida semper nisi</a>
+              </div>
+              <div class="link_div">
+                <a href="/">Suspendisse nisl elit</a>
+              </div>
+              <div class="link_div">
+                <a href="/">Dellentesque habitant morbi</a>
+              </div>
+
+              <div class="link_div">
+                <a href="/">Yamabuki Saaya jonna cute</a>
+              </div>
             </div>
           </div>
         </div>
       </footer>
-
-      <footer style="background-color: slategrey;">
-        <div clas="footer_container">
-          <p>Copyright Velocity inc. Madie in Hedgeho9</p>
-        </div>
-      </footer>
     </div>
+
+    <script src="js.js"></script>
   </body>
 </html>
