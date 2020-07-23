@@ -691,9 +691,6 @@ table {
 }
 
 @media (max-width: 767px) {
-  body {
-  }
-
   .second_section_container {
     height: 125vh;
   }
@@ -737,9 +734,6 @@ table {
 }
 
 @media screen and (max-width: 479px) {
-  body {
-  }
-
   .ms_block button {
     margin: 0.4em;
   }
