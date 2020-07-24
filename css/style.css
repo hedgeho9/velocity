@@ -221,7 +221,7 @@ table {
   width: 100%;
   height: 62vh;
   overflow: hidden;
-  background-image: url("/imgs/section1_main.jpg");
+  background-image: url("https://hedgeho9.github.io/velocity/imgs/section1_main.jpg");
   background-size: cover;
   display: flex;
 
