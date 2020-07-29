@@ -735,7 +735,7 @@ table {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("https://hedgeho9.github.io/velocity/font/Open_Sans/OpenSans-Light.ttf")
+  src: url("https://hedgeho9.github.io/velocity/font/Open_Sans/OpenSans-Light.woff")
     format("truetype");
   font-style: normal;
   font-weight: lighter;
